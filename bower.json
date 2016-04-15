@@ -1,0 +1,27 @@
+{
+    "name": "angular-selection",
+    "version": "0.1.0",
+    "description": "Dropdown - Selector",
+    "main": "src/selection.js",
+    "keywords": [
+        "selection",
+        "angular-selection",
+        "dropdown",
+        "angular-dropdown",
+        "kiddy2910",
+        "dangduy2910@gmail.com"
+    ],
+    "authors": [ "kiddy2910 <dangduy2910@gmail.com>" ],
+    "license": "MIT",
+    "homepage": "https://github.com/kiddy2910/angular-selection.git",
+    "ignore": [
+        "*",
+        "!dist/**",
+        "!sample/**",
+        "!src/**"
+    ],
+    "devDependencies": {
+        "angular": "1.5.x",
+        "jquery": ">1.10.2"
+    }
+}

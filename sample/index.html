@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="angularApp" ng-controller="MainController">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8">
+    <meta charset="utf-8">
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/angular/angular.min.js"></script>
+
+    <link href="../dist/angular-selection.css" rel="stylesheet" />
+    <script src="../dist/angular-selection.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body style="margin: 15px">
+
+    <selection ng-model="selected" onselect="onSelect($event)">
+        <item ref="a" ng-repeat="a in apps">
+            <img width="32px" ng-src="{{ a.logo }}" class="logo pull-left">
+            <div class="name pull-left">
+                <b>{{ a.name }}</b><br>
+                {{ a.description }}
+            </div>
+            <div class="clearfix"></div>
+        </item>
+    </selection>
+
+</body>
+
+</html>
